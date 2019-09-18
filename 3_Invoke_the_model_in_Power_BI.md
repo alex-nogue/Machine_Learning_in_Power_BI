@@ -20,7 +20,7 @@ Data on which we are going to apply the model.
 
 To create a workspace, simply go to app.powerbi.com and click on Workspaces as in the following image: 
 
-<img src="pictures/workspace.png" width=200>
+<img src="pictures/workspace.PNG" width="200">
 
 Then, click on "Create a new Workspace" and give a name and description to your workspace. 
 
@@ -28,11 +28,11 @@ Then, click on "Create a new Workspace" and give a name and description to your 
 
 In the new screen, click on "Get Started" under Dataflow. Should look something similat to this:
 
-<img src="pictures/dataflow.png" width=200>
+<img src="pictures/dataflow.PNG" width="200">
 
 Then click on Add new entities to import your dataset. Then, select the type of your data. In our case, it is a CSV file, so that we click on:
 
-<img src="pictures/csv.png" width=200>
+<img src="pictures/csv.PNG" width="200">
 
 In the following screen, we'll have to add the path of our data. I recommend to upload the data into a blob storage in Azure, so that it is much easier for Power BI to access to it. 
 

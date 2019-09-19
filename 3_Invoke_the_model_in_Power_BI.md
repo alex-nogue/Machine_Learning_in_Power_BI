@@ -44,7 +44,7 @@ To create a Blob Storage, go to the [Azure Portal](https://portal.azure.com) and
 
 Once you have your storage account, we can now create a Blob Storage and upload the data. To do so, run the following cell by specifying the account name and account key (_key1_) of your Storage Account. These can be found by clicking on your newly created Storage Account, as you can see in the following picture:
 
-<img src="pictures/storage_account.png">
+<img src="pictures/storage_account.PNG">
 
 
 ```python
@@ -99,11 +99,11 @@ block_blob_service.create_blob_from_path(
 
 The path of the data can be accessed via the Azure Portal. Go to Storage Accounts -> click on the Storage Account you have created -> Blobs -> click on the created container, here _examplename_ -> click on the name of your data, here _diabetes.csv_. You should have the following screen:
 
-<img src="pictures/blob.png" width = 500>
+<img src="pictures/blob.PNG" width = "500">
 
 The path of the data can be obtained from the _URL_ text box. Copy that URL and paste it on the Power BI Dataflow screen you had before:
 
-<img src="pictures/import_dataflow.png" width=400>
+<img src="pictures/import_dataflow.PNG" width="400">
 
 Click on _Next_ and transform your table in using the Power Query editor at your convenience. Here, we just have to set the first row as header.
 
@@ -113,11 +113,11 @@ Then, click on _Save & Close_, set a name and refresh your Workspace.
 
 To call the model on the data, click on _Edit entities_ to access to the Power Query editor and click on _AI Insights_
 
-<img src="pictures/AI_insights.png" width=500>
+<img src="pictures/AI_insights.PNG" width="500">
 
 In the following screen should appear the model we have created. Here, it was called _diabetes-regression_. Verify all columns are correctly assigned and click on _Apply_. 
 
-<img src="pictures/invoke.png" width=500>
+<img src="pictures/invoke.PNG" width="500">
 
 I experienced two kind of errors here:
 - The model doesn't appear: this means that either the model has not been correctly deployed, or that your Power BI subscription doesn't have access to the Azure Subscription. In the first case, review the second script __2_Model_Deplyment__. In the second case, you must grant access to your Power BI subscription as specified in the same script.
